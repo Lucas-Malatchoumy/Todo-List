@@ -2,7 +2,7 @@
 ### `npm install -D tailwindcss postcss autoprefixer`
 ### `npx tailwindcss init -p`
 ### `npm install react-icons --save`
-### `npm i uniqid
+### `npm i uniqid`
 
 ## Available Scripts
 
