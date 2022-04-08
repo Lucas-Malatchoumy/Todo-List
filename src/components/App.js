@@ -8,28 +8,6 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [ tasks, setTasks ] = useState(getTasks())
 
-  function DisplayTodoTasks(){
-    let tasksList = [...tasks];
-    let taskListTodo = tasksList.filter(task => {
-      if (task.status === 'todo') {
-        return task;
-      }
-    })
-    setTasks(taskListTodo)
-    console.log(...tasks);
-  }
-
-  function DisplayDoneTasks(){
-    let tasksList = [...tasks];
-    console.log(tasks);
-    let doneTaskList = tasksList.filter(task => {
-      if (task.status === 'done') {
-        return task;
-      }
-    })
-    setTasks(doneTaskList)
-  }
-
   function handleToggle(taskId){
     let tasksList = [...tasks];
     tasksList.map(task => {
@@ -58,7 +36,7 @@ function App() {
     <><div className="App">
       <h1 className='text-3xl font-bold text-red-600'>To-do list</h1>
     </div><Todo addNewTask={addNewTask}/>
-    <Todolist tasks={tasks} status={handleToggle} DisplayTodoTasks={DisplayTodoTasks} DisplayDoneTasks={DisplayDoneTasks}/>
+    <Todolist tasks={tasks} status={handleToggle} />
     </>
   );
 }
