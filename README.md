@@ -1,6 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with TodoList
+### npm install -D tailwindcss postcss autoprefixer
+### npx tailwindcss init -p
+### npm install react-icons --save
+### npm i uniqid
 
 ## Available Scripts
 
